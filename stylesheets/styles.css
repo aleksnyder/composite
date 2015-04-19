@@ -819,7 +819,9 @@ section #title .credits.left {
 section #title .credits.right {
   float: right;
 }
-
+.wrapper {
+  max-width: 1140px;
+}
 #grid-preview {
   max-width: 1140px;
 }
