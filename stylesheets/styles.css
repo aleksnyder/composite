@@ -824,8 +824,11 @@ section #title .credits.right {
 }
 #grid-preview {
   max-width: 1140px;
+  margin-top: 0;
 }
-
+#intro {
+  margin: 70px auto 0;
+}
 
 @media print, screen and (max-width: 720px) {
   #title .credits {
