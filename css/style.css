@@ -1,0 +1,50 @@
+body {
+  background-color: #462e52;
+}
+
+main {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 30px 0;
+}
+
+#intro h1,
+#intro p {
+  color: #fff;
+}
+
+#downloads {
+  display: table;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+#downloads li {
+  display: table-cell;
+}
+
+#downloads li a {
+  text-decoration: none;
+  padding: 1em;
+  background-color: #fff;
+  color: #462e52;
+  margin: 0 .5em;
+  border: 1px solid transparent;
+}
+
+#downloads li a:hover {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
+.center {
+  text-align: center;
+}
+
+#grid-preview {
+
+}

@@ -4,184 +4,174 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Composite Grid by Alek Snyder</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="stylesheets/calc-grid.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calc-grid.css">
 
   </head>
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/aleksnyder/composite">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/aleksnyder/composite/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/aleksnyder/composite/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
 
-    <div class="wrapper">
+    <main class="wrapper">
+      <section id="intro">
+        <h1 class="center">Composite</h1>
+        <p class="center">Small, lightweight grid using the calc() CSS property.</p>
+        <ul id="downloads">
+          <li class="col-4"><a href="#">View on GitHub</a></li>
+          <li class="col-4"><a href="#">ZIP</a></li>
+          <li class="col-4"><a href="#">TAR</a></li>
+        </ul>
+      </section>
 
-    <section id="intro">
-        <div id="title">
-          <h1>Composite</h1>
-            <p>Small, lightweight grid using the calc() CSS property.</p>
-          <hr>
+      <section id="grid-preview">
+        <!-- 100% -->
+        <div class="col col-12">
+          <p>.col-12</p>
         </div>
-    </section>
 
-    <section id="grid-preview">
-      <div class="container">
+        <!-- Grid 11 and Grid 1 -->
+        <div class="col col-11">
+          <p>.col-11</p>
+        </div>
+        <div class="col col-1 md-invisible">
+          <p>.col-1</p>
+        </div>
 
-          <!-- 100% -->
-          <div class="col col-12">
-            <p>.col-12</p>
-          </div>
+        <!-- Grid 10 and Grid 2 -->
+        <div class="col col-10">
+          <p>.col-10</p>
+        </div>
+        <div class="col col-2 md-invisible">
+          <p>.col-2</p>
+        </div>
 
-          <!-- Grid 11 and Grid 1 -->
-          <div class="col col-11">
-            <p>.col-11</p>
-          </div>
-          <div class="col col-1 md-invisible">
-            <p>.col-1</p>
-          </div>
+        <!-- 3/4 and 1/4 -->
+        <div class="col col-9">
+          <p>.col-9</p>
+        </div>
+        <div class="col col-3 md-invisible">
+          <p>.col-3</p>
+        </div>
 
-          <!-- Grid 10 and Grid 2 -->
-          <div class="col col-10">
-            <p>.col-10</p>
-          </div>
-          <div class="col col-2 md-invisible">
-            <p>.col-2</p>
-          </div>
+        <!-- 1/3 and 2/3 -->
+        <div class="col col-8">
+          <p>.col-8</p>
+        </div>
+        <div class="col col-4 md-invisible">
+          <p>.col-4</p>
+        </div>
 
-          <!-- 3/4 and 1/4 -->
-          <div class="col col-9">
-            <p>.col-9</p>
-          </div>
-          <div class="col col-3 md-invisible">
-            <p>.col-3</p>
-          </div>
+        <!-- 1/5 and 4/5 -->
+        <div class="col col-7">
+          <p>.col-7</p>
+        </div>
+        <div class="col col-5 md-invisible">
+          <p>.col-5</p>
+        </div>
 
-          <!-- 1/3 and 2/3 -->
-          <div class="col col-8">
-            <p>.col-8</p>
-          </div>
-          <div class="col col-4 md-invisible">
-            <p>.col-4</p>
-          </div>
+        <!-- 1/2 * 2 -->
+        <div class="col col-6">
+          <p>.col-6</p>
+        </div>
+        <div class="col col-6">
+          <p>.col-6</p>
+        </div>
 
-          <!-- 1/5 and 4/5 -->
-          <div class="col col-7">
-            <p>.col-7</p>
-          </div>
-          <div class="col col-5 md-invisible">
-            <p>.col-5</p>
-          </div>
+        <!-- 7 column and 5 column -->
+        <div class="col col-5">
+          <p>.col-5</p>
+        </div>
+        <div class="col col-7 md-invisible">
+          <p>.col-7</p>
+        </div>
 
-          <!-- 1/2 * 2 -->
-          <div class="col col-6">
-            <p>.col-6</p>
-          </div>
-          <div class="col col-6">
-            <p>.col-6</p>
-          </div>
+        <!-- 1/3 * 3 -->
+        <div class="col col-4">
+          <p>.col-4</p>
+        </div>
+        <div class="col col-4">
+          <p>.col-4</p>
+        </div>
+        <div class="col col-4">
+          <p>.col-4</p>
+        </div>
 
-          <!-- 7 column and 5 column -->
-          <div class="col col-5">
-            <p>.col-5</p>
-          </div>
-          <div class="col col-7 md-invisible">
-            <p>.col-7</p>
-          </div>
+        <!-- 1/4 * 4 -->
+        <div class="col col-3">
+          <p>.col-3</p>
+        </div>
+        <div class="col col-3">
+          <p>.col-3</p>
+        </div>
+        <div class="col col-3">
+          <p>.col-3</p>
+        </div>
+        <div class="col col-3">
+          <p>.col-3</p>
+        </div>
 
-          <!-- 1/3 * 3 -->
-          <div class="col col-4">
-            <p>.col-4</p>
-          </div>
-          <div class="col col-4">
-            <p>.col-4</p>
-          </div>
-          <div class="col col-4">
-            <p>.col-4</p>
-          </div>
+        <!-- 1/6 * 6 -->
+        <div class="col col-2">
+          <p>.col-2</p>
+        </div>
+        <div class="col col-2 md-invisible">
+          <p>.col-2</p>
+        </div>
+        <div class="col col-2 md-invisible">
+          <p>.col-2</p>
+        </div>
+        <div class="col col-2 md-invisible">
+          <p>.col-2</p>
+        </div>
+        <div class="col col-2 md-invisible">
+          <p>.col-2</p>
+        </div>
+        <div class="col col-2 md-invisible">
+          <p>.col-2</p>
+        </div>
 
-          <!-- 1/4 * 4 -->
-          <div class="col col-3">
-            <p>.col-3</p>
-          </div>
-          <div class="col col-3">
-            <p>.col-3</p>
-          </div>
-          <div class="col col-3">
-            <p>.col-3</p>
-          </div>
-          <div class="col col-3">
-            <p>.col-3</p>
-          </div>
-
-          <!-- 1/6 * 6 -->
-          <div class="col col-2">
-            <p>.col-2</p>
-          </div>
-          <div class="col col-2 md-invisible">
-            <p>.col-2</p>
-          </div>
-          <div class="col col-2 md-invisible">
-            <p>.col-2</p>
-          </div>
-          <div class="col col-2 md-invisible">
-            <p>.col-2</p>
-          </div>
-          <div class="col col-2 md-invisible">
-            <p>.col-2</p>
-          </div>
-          <div class="col col-2 md-invisible">
-            <p>.col-2</p>
-          </div>
-
-          <!-- 12 * 1 column -->
-          <div class="col col-1">
-            <p>.col-1</p>
-          </div>
-          <div class="col col-1 md-invisible">
-            <p>.col-1</p>
-          </div>
-          <div class="col col-1 md-invisible">
-            <p>.col-1</p>
-          </div>
-          <div class="col col-1 md-invisible">
-            <p>.col-1</p>
-          </div>
-          <div class="col col-1 md-invisible">
-            <p>.col-1</p>
-          </div>
-          <div class="col col-1 md-invisible">
-            <p>.col-1</p>
-          </div>
-          <div class="col col-1 md-invisible">
-            <p>.col-1</p>
-          </div>
-          <div class="col col-1 md-invisible">
-            <p>.col-1</p>
-          </div>
-          <div class="col col-1 md-invisible">
-            <p>.col-1</p>
-          </div>
-          <div class="col col-1 md-invisible">
-            <p>.col-1</p>
-          </div>
-          <div class="col col-1 md-invisible">
-            <p>.col-1</p>
-          </div>
-          <div class="col col-1 md-invisible">
-            <p>.col-1</p>
-          </div>
+        <!-- 12 * 1 column -->
+        <div class="col col-1">
+          <p>.col-1</p>
+        </div>
+        <div class="col col-1 md-invisible">
+          <p>.col-1</p>
+        </div>
+        <div class="col col-1 md-invisible">
+          <p>.col-1</p>
+        </div>
+        <div class="col col-1 md-invisible">
+          <p>.col-1</p>
+        </div>
+        <div class="col col-1 md-invisible">
+          <p>.col-1</p>
+        </div>
+        <div class="col col-1 md-invisible">
+          <p>.col-1</p>
+        </div>
+        <div class="col col-1 md-invisible">
+          <p>.col-1</p>
+        </div>
+        <div class="col col-1 md-invisible">
+          <p>.col-1</p>
+        </div>
+        <div class="col col-1 md-invisible">
+          <p>.col-1</p>
+        </div>
+        <div class="col col-1 md-invisible">
+          <p>.col-1</p>
+        </div>
+        <div class="col col-1 md-invisible">
+          <p>.col-1</p>
+        </div>
+        <div class="col col-1 md-invisible">
+          <p>.col-1</p>
         </div>
       </section>
+    </main>
+
   </body>
 </html>
