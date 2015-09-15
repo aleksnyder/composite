@@ -1,5 +1,2 @@
-# Composite
-Small, lightweight grid using the calc() CSS property.
-
-# View the Site
-http://pixelpusher89.github.io/composite/
+## Composite Grid
+CSS grid built using the amazing calc() CSS property.  See a live preview ([here](http://aleksnyder.github.io/composite)).
